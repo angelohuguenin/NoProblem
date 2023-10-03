@@ -9,7 +9,7 @@ export default class AppTitle extends Component {
                 <View style={styles.appTitle}>
                     <View style={styles.appIcon}>
                         <Image
-                            source={require("../assets/noProblem.png")}
+                            source={require("../assets/noProblem.jpg")}
                             style={styles.iconImage}
                         ></Image>
                     </View>
@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
         flex:0.7,
         justifyContent: "center",
         alignItems: "center",
-        backgroundColor: '#38B6FF'
+        backgroundColor: '#5CB9FF'
       },
       iconImage: {
         width: "100%",

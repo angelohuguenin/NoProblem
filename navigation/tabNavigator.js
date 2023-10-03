@@ -19,11 +19,12 @@ export default function MyTabs() {
             tabBarIcon: ({ focused, color, size }) => {
             let iconName;
 
-            if (route.name === 'Home') {
-                iconName = focused
-                ? 'home'
-                : 'home-outline';
-            } else if (route.name === 'Reminders') {
+            // if (route.name === 'Home') {
+            //     iconName = focused
+            //     ? 'home'
+            //     : 'home-outline';
+            // } else 
+            if (route.name === 'Reminders') {
                 iconName = focused
                 ? 'alarm'
                 : 'alarm-outline';
@@ -41,7 +42,7 @@ export default function MyTabs() {
         activeColor='#ee8249'
         inactiveColor='gray'
       >
-        <Tab.Screen name="Home" component={Home} />
+        {/* <Tab.Screen name="Home" component={Home} /> */}
         <Tab.Screen name="Reminders" component={Reminders} />
         <Tab.Screen name="Routine" component={Routine} />
       </Tab.Navigator>
@@ -50,7 +51,7 @@ export default function MyTabs() {
 
   const styles = StyleSheet.create({
     bottomTabStyle: {
-      backgroundColor: "#2f345d",
+      backgroundColor: "#13293d",
       height: "8%",
       borderTopLeftRadius: RFValue(30),
       borderTopRightRadius: RFValue(30),
